@@ -41,9 +41,7 @@ The rest of the code is properly commented and self explanatory. Tweaks can be m
 
 ## Authors
 
-* **Rajat Dipta Biswas** - *Initial work*
-
-See also the list of [contributors](https://github.com/rajatdiptabiswas/snake-pygame/graphs/contributors) who participated in this project.
+* **Rijan Khatri** - *Initial work*
 
 ## Acknowledgements
 * [Pygame Documentations](https://www.pygame.org/docs/)
