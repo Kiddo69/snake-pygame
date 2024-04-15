@@ -40,7 +40,7 @@ The rest of the code is properly commented and self explanatory. Tweaks can be m
 
 ## Authors
 
-* **Rijan Khatri** - *Initial work*
+* **Rijan Khatri**
 
 ## Acknowledgements
 * [Pygame Documentations](https://www.pygame.org/docs/)
