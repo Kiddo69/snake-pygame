@@ -25,9 +25,11 @@ The rest of the code is properly commented and self explanatory. Tweaks can be m
 ## Screenshots
 
 ![image](https://github.com/Kiddo69/snake-pygame/assets/111618669/001c68f0-82ec-42ce-82d1-ea714f93351f)
+
 *Active game screen*
 
 ![image](https://github.com/Kiddo69/snake-pygame/assets/111618669/499e81b6-0945-477c-a8ce-0caafe2b467b)
+
 *Game over screen*
 
 
