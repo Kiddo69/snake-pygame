@@ -1,4 +1,4 @@
-# Snake Eater
+# Snake and the Ball
 A snake game written in Python using the Pygame library.
 
 
@@ -14,7 +14,7 @@ pip3 install pygame
 ## Running the application
 Download the source code from the repository and run the file just as any other Python script (.py) file.
 ```
-python3 Snake\ Game.py
+python3 SnakeGame.py
 ```
 
 The `difficulty` variable can be changed with the values provided in the comment to set the difficulty level.
@@ -24,13 +24,12 @@ The rest of the code is properly commented and self explanatory. Tweaks can be m
 
 ## Screenshots
 
-![1](https://user-images.githubusercontent.com/32998741/33873439-27f635b2-df45-11e7-8fc1-f7812f17447a.png)
-*Written using PyCharm*
+![image](https://github.com/Kiddo69/snake-pygame/assets/111618669/001c68f0-82ec-42ce-82d1-ea714f93351f)
 
-![2](https://user-images.githubusercontent.com/32998741/33873437-2780ed2a-df45-11e7-9776-b1f151fa4e02.png)
 *Active game screen*
 
-![3](https://user-images.githubusercontent.com/32998741/33873440-28647360-df45-11e7-8291-b82d5646352f.png)
+![image](https://github.com/Kiddo69/snake-pygame/assets/111618669/499e81b6-0945-477c-a8ce-0caafe2b467b)
+
 *Game over screen*
 
 
@@ -41,9 +40,7 @@ The rest of the code is properly commented and self explanatory. Tweaks can be m
 
 ## Authors
 
-* **Rajat Dipta Biswas** - *Initial work*
-
-See also the list of [contributors](https://github.com/rajatdiptabiswas/snake-pygame/graphs/contributors) who participated in this project.
+* **Rijan Khatri**
 
 ## Acknowledgements
 * [Pygame Documentations](https://www.pygame.org/docs/)
