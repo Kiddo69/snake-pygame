@@ -1,4 +1,4 @@
-# Snake Eater
+# Snake and the Ball
 A snake game written in Python using the Pygame library.
 
 
