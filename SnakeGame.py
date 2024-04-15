@@ -1,5 +1,5 @@
 """
-Snake Eater
+Snake Game and the ball
 Made with PyGame
 """
 
@@ -59,19 +59,53 @@ change_to = direction
 score = 0
 
 
-# Game Over
+## Game Over
 def game_over():
     my_font = pygame.font.SysFont('times new roman', 90)
     game_over_surface = my_font.render('YOU DIED', True, red)
     game_over_rect = game_over_surface.get_rect()
-    game_over_rect.midtop = (frame_size_x/2, frame_size_y/4)
+    game_over_rect.midtop = (frame_size_x / 2, frame_size_y / 4)
     game_window.fill(black)
     game_window.blit(game_over_surface, game_over_rect)
+
+    # Draw restart button
+    restart_font = pygame.font.SysFont('times new roman', 40)
+    restart_surface = restart_font.render('Restart', True, green)
+    restart_rect = restart_surface.get_rect()
+    restart_rect.center = (frame_size_x / 2, frame_size_y / 2)
+    game_window.blit(restart_surface, restart_rect)
+
+    # Display the current score
     show_score(0, red, 'times', 20)
+
     pygame.display.flip()
-    time.sleep(3)
-    pygame.quit()
-    sys.exit()
+
+    # Wait for a click on the restart button
+    restart_clicked = False
+    while not restart_clicked:
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                pygame.quit()
+                sys.exit()
+            elif event.type == pygame.MOUSEBUTTONDOWN:
+                mouse_x, mouse_y = event.pos
+                if restart_rect.collidepoint(mouse_x, mouse_y):
+                    restart_clicked = True
+
+    # Reset the game variables and restart the game
+    reset_game()
+
+
+# Function to reset game variables and restart the game
+def reset_game():
+    global snake_pos, snake_body, food_pos, food_spawn, direction, change_to, score
+    snake_pos = [100, 50]
+    snake_body = [[100, 50], [100 - 10, 50], [100 - (2 * 10), 50]]
+    food_pos = [random.randrange(1, (frame_size_x // 10)) * 10, random.randrange(1, (frame_size_y // 10)) * 10]
+    food_spawn = True
+    direction = 'RIGHT'
+    change_to = direction
+    score = 0
 
 
 # Score
